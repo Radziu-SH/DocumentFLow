@@ -1,7 +1,11 @@
-var builder = WebApplication.CreateBuilder(args);
+using DocumentFlow.Document.Api.Extension;
+using DocumentFlow.Infrastructure.Extensions;
 
-// Add services to the container.
-builder.Services.AddRazorPages();
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddInfrastructure();
+builder.Services.AddDocument();
+
+builder.Services.AddInfrastructure();
 
 var app = builder.Build();
 
@@ -16,10 +20,8 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
-app.UseRouting();
+app.UseInfrastructure();
 
-app.UseAuthorization();
 
-app.MapRazorPages();
 
 app.Run();

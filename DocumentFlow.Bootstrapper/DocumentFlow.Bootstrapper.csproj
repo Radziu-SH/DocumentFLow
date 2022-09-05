@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DocumentFlow.Document.Api\DocumentFlow.Document.Api.csproj" />
+    <ProjectReference Include="..\DocumentFlow.Infrastructure\DocumentFlow.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

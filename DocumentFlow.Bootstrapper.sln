@@ -5,6 +5,22 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentFlow.Bootstrapper", "DocumentFlow.Bootstrapper\DocumentFlow.Bootstrapper.csproj", "{66D2C302-43AE-4E39-AEB2-CF3C7FA97A46}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bootstrapper", "bootstrapper", "{6A3DAB28-CEF1-476B-85FA-BDCE0614AB5C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "modules", "modules", "{C3016F7E-B55E-438C-8186-8A75F700054D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shares", "shares", "{4CDDE938-768A-43DA-AD2C-A8469A8C5626}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentFlow.Infrastructure", "DocumentFlow.Infrastructure\DocumentFlow.Infrastructure.csproj", "{33B95737-3FE1-4C9D-B8B1-67A8C56F3B27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentFlow.Abstractions", "DocumentFlow.Abstractions\DocumentFlow.Abstractions.csproj", "{793B361B-17E4-4195-80D4-577C66F2B7E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "document", "document", "{2CC1437D-089C-42F4-89A1-B7A192D7031F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentFlow.Document.Core", "DocumentFlow.Document.Core\DocumentFlow.Document.Core.csproj", "{E31B89CD-CD60-4C4D-8D93-A166AD3946C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentFlow.Document.Api", "DocumentFlow.Document.Api\DocumentFlow.Document.Api.csproj", "{7C914BC8-B679-4A0E-969F-17EE8FF694F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +31,33 @@ Global
 		{66D2C302-43AE-4E39-AEB2-CF3C7FA97A46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66D2C302-43AE-4E39-AEB2-CF3C7FA97A46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66D2C302-43AE-4E39-AEB2-CF3C7FA97A46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33B95737-3FE1-4C9D-B8B1-67A8C56F3B27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33B95737-3FE1-4C9D-B8B1-67A8C56F3B27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33B95737-3FE1-4C9D-B8B1-67A8C56F3B27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33B95737-3FE1-4C9D-B8B1-67A8C56F3B27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{793B361B-17E4-4195-80D4-577C66F2B7E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{793B361B-17E4-4195-80D4-577C66F2B7E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{793B361B-17E4-4195-80D4-577C66F2B7E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{793B361B-17E4-4195-80D4-577C66F2B7E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E31B89CD-CD60-4C4D-8D93-A166AD3946C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E31B89CD-CD60-4C4D-8D93-A166AD3946C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E31B89CD-CD60-4C4D-8D93-A166AD3946C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E31B89CD-CD60-4C4D-8D93-A166AD3946C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C914BC8-B679-4A0E-969F-17EE8FF694F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C914BC8-B679-4A0E-969F-17EE8FF694F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C914BC8-B679-4A0E-969F-17EE8FF694F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C914BC8-B679-4A0E-969F-17EE8FF694F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{66D2C302-43AE-4E39-AEB2-CF3C7FA97A46} = {6A3DAB28-CEF1-476B-85FA-BDCE0614AB5C}
+		{33B95737-3FE1-4C9D-B8B1-67A8C56F3B27} = {4CDDE938-768A-43DA-AD2C-A8469A8C5626}
+		{793B361B-17E4-4195-80D4-577C66F2B7E1} = {4CDDE938-768A-43DA-AD2C-A8469A8C5626}
+		{2CC1437D-089C-42F4-89A1-B7A192D7031F} = {C3016F7E-B55E-438C-8186-8A75F700054D}
+		{E31B89CD-CD60-4C4D-8D93-A166AD3946C9} = {2CC1437D-089C-42F4-89A1-B7A192D7031F}
+		{7C914BC8-B679-4A0E-969F-17EE8FF694F2} = {2CC1437D-089C-42F4-89A1-B7A192D7031F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4FF14754-7ADD-4299-8649-1FDB450E565D}
